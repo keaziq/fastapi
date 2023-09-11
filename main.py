@@ -1,8 +1,11 @@
-from fastapi import FastAPI
+from collections import Counter #подсчёт букв(обьектов) в строке
+a = Counter(input("Введи слово: "))
 
-app = FastAPI()
+print("Букв:",a)
 
 
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
+
+
+
+
+
